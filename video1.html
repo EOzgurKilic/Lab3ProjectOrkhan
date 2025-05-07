@@ -2,16 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Clip 1</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Whale Dances Real Vid</title>
+  <link rel="stylesheet" href="css/video.css">
 </head>
 <body>
-  <h1>Clip 1 - Watch Now</h1>
-  <video width="720" controls>
-    <source src="videos/video1.mp4" type="video/mp4">
-    Your browser does not support this video.
-  </video>
-  <br><br>
-  <a href="videos/video1.mp4" download class="btn">Save This Video</a>
+  <div class="video-page-container">
+    <h2 class="video-page-title">Whale Dances Real Vid</h2>
+
+    <video class="video-player" controls>
+      <source src="videos/video1.mp4" type="video/mp4">
+    </video>
+
+    <button class="download-button" onclick="downloadVideo(event, 'videos/video1.mp4')">Download This Clip</button>
+  </div>
+
+  <div class="other-videos-bar">
+    <a href="video2.html" class="other-clip">
+      <img src="img/tmb2.jpg" alt="Clip 2">
+      <span>Hamsili Düşler</span>
+    </a>
+    <a href="video3.html" class="other-clip">
+      <img src="img/tmb3.jpg" alt="Clip 3">
+      <span>Çağrı Ergün HYPE Yaşını Açıklıyor</span>
+    </a>
+    <a href="video4.html" class="other-clip">
+      <img src="img/tmb4.jpg" alt="Clip 4">
+      <span>Unlost Kumardan Para Kazanıyor</span>
+    </a>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

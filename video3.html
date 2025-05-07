@@ -2,16 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Clip 3</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Çağrı Ergün HYPE Yaşını Açıklıyor</title>
+  <link rel="stylesheet" href="css/video.css">
 </head>
 <body>
-  <h1>Clip 3 - Watch Now</h1>
-  <video width="720" controls>
-    <source src="videos/video3.mp4" type="video/mp4">
-    Your browser does not support this video.
-  </video>
-  <br><br>
-  <a href="videos/video3.mp4" download class="btn">Save This Video</a>
+  <div class="video-page-container">
+    <h2 class="video-page-title">Çağrı Ergün HYPE Yaşını Açıklıyor</h2>
+
+    <video class="video-player" controls>
+      <source src="videos/video3.mp4" type="video/mp4">
+    </video>
+
+    <button class="download-button" onclick="downloadVideo(event, 'videos/video3.mp4')">Download This Clip</button>
+  </div>
+
+  <div class="other-videos-bar">
+    <a href="video2.html" class="other-clip">
+      <img src="img/tmb2.jpg" alt="Clip 2">
+      <span>Hamsili Düşler</span>
+    </a>
+    <a href="video1.html" class="other-clip">
+        <img src="img/tmb1.jpg" alt="Clip 1">
+        <span>Whale Dances Real Vid</span>
+      </a>
+    <a href="video4.html" class="other-clip">
+      <img src="img/tmb4.jpg" alt="Clip 4">
+      <span>Unlost Kumardan Para Kazanıyor</span>
+    </a>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

@@ -2,16 +2,35 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Clip 4</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Unlost Kumardan Para Kazanıyor</title>
+  <link rel="stylesheet" href="css/video.css">
 </head>
 <body>
-  <h1>Clip 4 - Watch Now</h1>
-  <video width="720" controls>
-    <source src="videos/video4.mp4" type="video/mp4">
-    Your browser does not support this video.
-  </video>
-  <br><br>
-  <a href="videos/video4.mp4" download class="btn">Save This Video</a>
+  <div class="video-page-container">
+    <h2 class="video-page-title">Unlost Kumardan Para Kazanıyor</h2>
+
+    <video class="video-player" controls>
+      <source src="videos/video4.mp4" type="video/mp4">
+    </video>
+
+    <button class="download-button" onclick="downloadVideo(event, 'videos/video4.mp4')">Download This Clip</button>
+  </div>
+
+  <div class="other-videos-bar">
+    <a href="video2.html" class="other-clip">
+      <img src="img/tmb2.jpg" alt="Clip 2">
+      <span>Hamsili Düşler</span>
+    </a>
+    <a href="video3.html" class="other-clip">
+      <img src="img/tmb3.jpg" alt="Clip 3">
+      <span>Çağrı Ergün HYPE Yaşını Açıklıyor</span>
+    </a>
+    <a href="video1.html" class="other-clip">
+        <img src="img/tmb1.jpg" alt="Clip 1">
+        <span>Unlost Kumardan Para Kazanıyor</span>
+      </a>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
